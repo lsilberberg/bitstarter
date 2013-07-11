@@ -4,9 +4,8 @@ var app = epress.createServer(express.logger());
 app.get('/', function(request, response) {
    
    var fs = require('fs');
-   var content = fs.readFileSync('index.html', 'utf-8'); 
-   var buf = new Buffer(content);
-   response.send(buf.toString(buf));
+   var content = "My message";
+   response.send(content);
 });
 
 var port = process.env.PORT || 5000;
