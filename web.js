@@ -1,5 +1,5 @@
 var express = require('express');
-var app = epress.createServer(express.logger());
+var app = xepress.createServer(express.logger());
 
 app.get('/', function(request, response) {
    var content = "My message";
